@@ -130,7 +130,7 @@ class Filter
 		if 29 < code < 38 then callback @pushStyle("ef#{code - 30}")
 		if code is 39 then callback @pushStyle("color:#{@opts.fg}")
 		if 39 < code < 48 then callback @pushStyle("eb#{code - 40}")
-		if code is 49 then callback @pushStyle("background-color:#{@opts.bg}")
+		if code is 49 then callback @pushStyle("background-color:transparent")
 		if 89 < code < 98 then callback @pushStyle("ef#{8 + (code - 90)}")
 		if 99 < code < 108 then callback @pushStyle("eb#{8 + (code - 100)}")
 
